@@ -1714,7 +1714,7 @@ public struct Vizsn
 
 	public void setText(const(char)* aText)
 	{
-		Vizsn_setText(objhandle, aText);
+		Vizsn_setText(objhandle, cast(char*)aText);
 	}
 
 	public void setVolume(float aVolume)
