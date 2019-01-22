@@ -8,20 +8,20 @@ import soloud;
 void main()
 {
     loadSoloud();
-	
-	Soloud soloud = Soloud.create();
+    
+    Soloud soloud = Soloud.create();
     soloud.init();
-	
+    
     WavStream music = WavStream.create();
     music.load("music.mp3");
     int voice = soloud.play(music);
-	
-	while (soloud.getActiveVoiceCount() > 0)
+    
+    while (soloud.getActiveVoiceCount() > 0)
     {
-		// do nothing while music is playing...
+        // do nothing while music is playing...
     }
-	
-	music.free();
-	soloud.deinit();
+    
+    music.free();
+    soloud.deinit();
 }
 ```
