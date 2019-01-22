@@ -1712,7 +1712,7 @@ public struct Vizsn
 		Vizsn_destroy(objhandle);
 	}
 
-	public void setText(char* aText)
+	public void setText(const(char)* aText)
 	{
 		Vizsn_setText(objhandle, aText);
 	}
