@@ -11,7 +11,7 @@
     "sourcePaths": ["src"],
 
     "dependencies": {
-        "bindbc-loader": "~>0.3.2"
+        "bindbc-loader": "~>1.0.0"
     },
 
     "buildRequirements":[
