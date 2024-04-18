@@ -4,6 +4,8 @@
 
 module soloud;
 
+public import bindbc.soloud;
+
 pure @safe nothrow @nogc:
 
 private struct SoloudObject
@@ -1257,7 +1259,7 @@ pure @safe nothrow @nogc:
 		Monotone_destroy(objhandle);
 	}
 
-	public int setParams(int aHardwareChannels, int aWaveform = Soloud::WAVE_SQUARE)
+	public int setParams(int aHardwareChannels, int aWaveform = Soloud.WAVE_SQUARE)
 	{
 		return Monotone_setParamsEx(objhandle, aHardwareChannels, aWaveform);
 	}
