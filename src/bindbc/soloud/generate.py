@@ -8,6 +8,7 @@ C_TO_D_TYPES = {
     "string":"string",
     "int":"int",
     "void":"void",
+    "const unsigned char *":"const(ubyte)*",
     "const char *":"const(char)*",
     "char *":"char*",
     "unsigned int":"uint",
@@ -223,7 +224,7 @@ SLSupport loadSoloud(const(char)* libName)
 
     %s
     
-    loadedVersion = SLSupport.sl20181119;
+    loadedVersion = SLSupport.sl20200207;
 
     if (errorCount() != errCount)
         return SLSupport.badLibrary;
