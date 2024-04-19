@@ -1,0 +1,17 @@
+{
+    "name": "demo",
+    "description": "SoLoud demo",
+    "homepage": "https://github.com/gecko0307/bindbc-soloud",
+    "license": "BSL-1.0",
+    "authors": [
+        "Timur Gafarov"
+    ],
+    "dependencies": {
+        "bindbc-soloud": { "path": ".." }
+    },
+    "buildRequirements": [
+        "allowWarnings"
+    ],
+    "mainSourceFile": "src/main.d",
+    "targetType": "executable"
+}
