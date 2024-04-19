@@ -28,8 +28,9 @@ module bindbc.soloud.types;
 enum SLSupport {
     noLibrary,
     badLibrary,
-    sl20181119
+    sl20181119,
+    sl20200207,
 }
 
 version(SL_20181119) enum slSupport = SLSupport.sl20181119;
-else                 enum slSupport = SLSupport.sl20181119;
+else                 enum slSupport = SLSupport.sl20200207;
